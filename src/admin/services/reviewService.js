@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8087/api/admin/reviews";
+const API_BASE_URL = `${import.meta.env.VITE_API_URL || "http://localhost:8087/api"}/admin/reviews`;
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem("accessToken");
